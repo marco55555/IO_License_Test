@@ -1,0 +1,353 @@
+{
+    "advanced_preconditions": {
+        "k124a665f111a": {
+            "condition": [
+                "k9a1c55e8f875",
+                "or",
+                "k69a02a20d0ab",
+                "or",
+                "kb097e1945ae1"
+            ],
+            "entity": "precondition/advanced",
+            "hash": "k124a665f111a",
+            "public": true,
+            "title": "Outbound License \u21d2 was compiled",
+            "type": "advanced",
+            "visible": true
+        },
+        "k7ba6775bbc10": {
+            "condition": [
+                "k6b1ba649034f",
+                "or",
+                "(",
+                "kdfaf79797285",
+                "and",
+                "k9a1c55e8f875",
+                ")",
+                "or",
+                "(",
+                "k32861a4c8aaf",
+                "and",
+                "k69a02a20d0ab",
+                ")",
+                "or",
+                "ka6aa2ae6e5dd"
+            ],
+            "entity": "precondition/advanced",
+            "hash": "k7ba6775bbc10",
+            "public": true,
+            "title": "Passed",
+            "type": "advanced",
+            "visible": true
+        },
+        "k8769782135e8": {
+            "condition": [
+                "kdfaf79797285",
+                "and",
+                "kb493017b1645",
+                "and",
+                "k69a02a20d0ab"
+            ],
+            "entity": "precondition/advanced",
+            "hash": "k8769782135e8",
+            "public": true,
+            "title": "Exception Required",
+            "type": "advanced",
+            "visible": true
+        },
+        "kc00cf6dc2ea1": {
+            "condition": [
+                "(",
+                "kdfaf79797285",
+                "and",
+                "(",
+                "k69a02a20d0ab",
+                "or",
+                "kb097e1945ae1",
+                ")",
+                "and",
+                "(",
+                "k02084357a3fc",
+                "or",
+                "k0700b31d91dc",
+                ")",
+                ")",
+                "or",
+                "(",
+                "k32861a4c8aaf",
+                "and",
+                "not",
+                "k69a02a20d0ab",
+                "and",
+                "not",
+                "k6b1ba649034f",
+                ")"
+            ],
+            "entity": "precondition/advanced",
+            "hash": "kc00cf6dc2ea1",
+            "public": true,
+            "title": "Passed No",
+            "type": "advanced",
+            "visible": true
+        },
+        "kec4df7f01ecf": {
+            "condition": [
+                "kdfaf79797285",
+                "or",
+                "k32861a4c8aaf",
+                "or",
+                "ka6aa2ae6e5dd"
+            ],
+            "entity": "precondition/advanced",
+            "hash": "kec4df7f01ecf",
+            "public": true,
+            "title": "Inbound License \u21d2 was compiled",
+            "type": "advanced",
+            "visible": true
+        }
+    },
+    "auto_generated": false,
+    "description": null,
+    "entity": "document",
+    "hash": "kd421f788eed3",
+    "html": "Inbound is licensed under #{kefd63504d470}.\n\nOutbound is licensed under #{k0c19f11b53fa}.\n\n#{k7f5d1141d3f6}#{kc789d6b25e94}#{kfb91207a3515}\n\n#{k790d089fd5aa}",
+    "license": "AGPLv3",
+    "outputs": {
+        "k0c19f11b53fa": {
+            "_precondition": "k124a665f111a",
+            "entity": "output",
+            "hash": "k0c19f11b53fa",
+            "html": "@{k1d6edb61f775}",
+            "public": true,
+            "title": "Outbound License \u21d2 output",
+            "visible": true
+        },
+        "k790d089fd5aa": {
+            "_precondition": "kec4df7f01ecf",
+            "entity": "output",
+            "hash": "k790d089fd5aa",
+            "html": "\n\n\n\n\n---\nI/O License Test \u2013 A license compatibility test\nCopyright (C) 2018 \u2013 Marco Ciurcina \n\nI/O License Test is free software: you can redistribute it and/or modify\nit under the terms of the GNU Affero General Public License as\npublished by the Free Software Foundation, either version 3 of the\nLicense, or (at your option) any later version.\n\nI/O License Test is distributed in the hope that it will be useful,\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\nGNU Affero General Public License for more details.\n\nYou should have received a copy of the GNU Affero General Public License\nalong with this program.  If not, see <http://www.gnu.org/licenses/>.\n\nThe source code of I/O License Test is available here https://github.com/marco55555/IO_License_Test/",
+            "public": true,
+            "title": "AGPLv3",
+            "visible": true
+        },
+        "k7f5d1141d3f6": {
+            "_precondition": "k7ba6775bbc10",
+            "entity": "output",
+            "hash": "k7f5d1141d3f6",
+            "html": "The test is **passed**.",
+            "public": true,
+            "title": "Passed",
+            "visible": true
+        },
+        "kc789d6b25e94": {
+            "_precondition": "kc00cf6dc2ea1",
+            "entity": "output",
+            "hash": "kc789d6b25e94",
+            "html": "The test is **not passed**.",
+            "public": true,
+            "title": "Passed no",
+            "visible": true
+        },
+        "kefd63504d470": {
+            "_precondition": "kec4df7f01ecf",
+            "entity": "output",
+            "hash": "kefd63504d470",
+            "html": "@{k854a265d5977}",
+            "public": true,
+            "title": "Inbound License \u21d2 output",
+            "visible": true
+        },
+        "kfb91207a3515": {
+            "_precondition": "k8769782135e8",
+            "entity": "output",
+            "hash": "kfb91207a3515",
+            "html": "The test is **passed** but an **exception** to Outbound license is **required**.",
+            "public": true,
+            "title": "Passed with exception",
+            "visible": true
+        }
+    },
+    "public": true,
+    "qa": {
+        "k1d6edb61f775": {
+            "_parent_precondition": "kec4df7f01ecf",
+            "answers": [
+                "Eclipse Public License v. 1",
+                "GNU GPL v.2",
+                "MIT License"
+            ],
+            "entity": "qa",
+            "hash": "k1d6edb61f775",
+            "link": null,
+            "public": true,
+            "question": "What's the license of the Outbound software?",
+            "title": "Outbound License",
+            "tooltip": null,
+            "type": "single",
+            "visible": true
+        },
+        "k2b7614d4152d": {
+            "_parent_precondition": "k124a665f111a",
+            "answers": [
+                "Inbound is (at least in part) based on, or \u201cpast and copied\u201d as part of, Outbound",
+                "Inbound is a software and it is included at compilation time to Outbound",
+                "Inbound is a software and it is called at runtime by Outbound",
+                "None of the above applies"
+            ],
+            "entity": "qa",
+            "hash": "k2b7614d4152d",
+            "link": null,
+            "public": true,
+            "question": "What is the relation between Inbound and Outbound?",
+            "title": "Relation I/O",
+            "tooltip": null,
+            "type": "single",
+            "visible": true
+        },
+        "k854a265d5977": {
+            "_parent_precondition": null,
+            "answers": [
+                "Eclipse Public License v. 1",
+                "GNU GPL v. 2",
+                "MIT License"
+            ],
+            "entity": "qa",
+            "hash": "k854a265d5977",
+            "link": null,
+            "public": true,
+            "question": "What's the license of the Inbound software?",
+            "title": "Inbound License",
+            "tooltip": null,
+            "type": "single",
+            "visible": true
+        }
+    },
+    "simple_preconditions": {
+        "k02084357a3fc": {
+            "condition": [
+                "k2b7614d4152d",
+                "Inbound is (at least in part) based on, or \u201cpast and copied\u201d as part of, Outbound"
+            ],
+            "entity": "precondition/simple",
+            "hash": "k02084357a3fc",
+            "public": true,
+            "title": "Relation I/O \u21d2 Inbound is (at least in part) based on, or \u201cpast and copied\u201d as part of, Outbound",
+            "type": "simple",
+            "visible": true
+        },
+        "k0700b31d91dc": {
+            "condition": [
+                "k2b7614d4152d",
+                "Inbound is a software and it is included at compilation time to Outbound"
+            ],
+            "entity": "precondition/simple",
+            "hash": "k0700b31d91dc",
+            "public": true,
+            "title": "Relation I/O \u21d2 Inbound is a software and it is included at compilation time to Outbound",
+            "type": "simple",
+            "visible": true
+        },
+        "k32861a4c8aaf": {
+            "condition": [
+                "k854a265d5977",
+                "GNU GPL v. 2"
+            ],
+            "entity": "precondition/simple",
+            "hash": "k32861a4c8aaf",
+            "public": true,
+            "title": "Inbound License \u21d2 GNU GPL v. 2",
+            "type": "simple",
+            "visible": true
+        },
+        "k69a02a20d0ab": {
+            "condition": [
+                "k1d6edb61f775",
+                "GNU GPL v.2"
+            ],
+            "entity": "precondition/simple",
+            "hash": "k69a02a20d0ab",
+            "public": true,
+            "title": "Outbound License \u21d2 GNU GPL v.2",
+            "type": "simple",
+            "visible": true
+        },
+        "k6b1ba649034f": {
+            "condition": [
+                "k2b7614d4152d",
+                "None of the above applies"
+            ],
+            "entity": "precondition/simple",
+            "hash": "k6b1ba649034f",
+            "public": true,
+            "title": "Relation I/O \u21d2 None of the above applies",
+            "type": "simple",
+            "visible": true
+        },
+        "k9a1c55e8f875": {
+            "condition": [
+                "k1d6edb61f775",
+                "Eclipse Public License v. 1"
+            ],
+            "entity": "precondition/simple",
+            "hash": "k9a1c55e8f875",
+            "public": true,
+            "title": "Outbound License \u21d2 Eclipse Public License v. 1",
+            "type": "simple",
+            "visible": true
+        },
+        "ka6aa2ae6e5dd": {
+            "condition": [
+                "k854a265d5977",
+                "MIT License"
+            ],
+            "entity": "precondition/simple",
+            "hash": "ka6aa2ae6e5dd",
+            "public": true,
+            "title": "Inbound License \u21d2 MIT License",
+            "type": "simple",
+            "visible": true
+        },
+        "kb097e1945ae1": {
+            "condition": [
+                "k1d6edb61f775",
+                "MIT License"
+            ],
+            "entity": "precondition/simple",
+            "hash": "kb097e1945ae1",
+            "public": true,
+            "title": "Outbound License \u21d2 MIT License",
+            "type": "simple",
+            "visible": true
+        },
+        "kb493017b1645": {
+            "condition": [
+                "k2b7614d4152d",
+                "Inbound is a software and it is called at runtime by Outbound"
+            ],
+            "entity": "precondition/simple",
+            "hash": "kb493017b1645",
+            "public": true,
+            "title": "Relation I/O \u21d2 Inbound is a software and it is called at runtime by Outbound",
+            "type": "simple",
+            "visible": true
+        },
+        "kdfaf79797285": {
+            "condition": [
+                "k854a265d5977",
+                "Eclipse Public License v. 1"
+            ],
+            "entity": "precondition/simple",
+            "hash": "kdfaf79797285",
+            "public": true,
+            "title": "Inbound License \u21d2 Eclipse Public License v. 1",
+            "type": "simple",
+            "visible": true
+        }
+    },
+    "status": null,
+    "tags": [],
+    "title": "Compatibility Test",
+    "version": "0.1",
+    "visible": true
+}
